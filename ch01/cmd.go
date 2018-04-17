@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-//define a struct for cmd to store parameters
+//define a struct for cmd to store command parameters
 type Cmd struct {
 	helpFlag bool
 	versionFlag bool
@@ -16,6 +16,7 @@ type Cmd struct {
 }
 
 //flag.Parse() is used to analysis parameters
+//see more detail in flag package in go
 func parseCmd() *Cmd {
 	cmd := &Cmd{}
 
